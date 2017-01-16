@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+@mixin btn-variant($color, $bg, $hover-bg, $border-color: $bg, $boder-hover-bg: $hover-bg, $hover-color: $color){
+    color: $color;
+    background-color: $bg;
+    border: 1px solid $border-color;
+
+    &:hover{
+        color: $hover-color;
+        background-color: $hover-bg;
+        border-color: $boder-hover-bg;
+    }
+}
+
+.btn , .btn_white{
+	display: inline-block;
+	width: 100px;
+	height: $btn-height;
+	line-height: $btn-height;
+	color: $white;
+	text-align: center;
+	border-radius: 5px;
+	background: $btn-bg;
+	@include btn-variant(#fff, $btn-bg, $btn-hover-bg);
+	@include transition(.4s);
+	box-shadow: 0px 2px 3px #d9ebff;
+    cursor: pointer;
+
+    &.btn-sm{
+        width: 88px;
+        height: -2 + $search-height;
+        line-height: -2 + $search-height;
+    }
+}
+
+.btn_white{
+    // @include btn-variant($btn-bg, $btn-stroke-bg, $btn-hover-bg, $btn-bg, $btn-hover-bg, #fff);
+    @include btn-variant(#4fa0fb ,#fff ,#fff ,#4fa0fb, #246cbd , #3686e0);
+}
+
+.disabled{
+    background: #cdcdcd !important;
+    color: #333 !important;
+    cursor: default !important;
+    border-color: #bebebe !important;
+}
+
+.btn_bigger{
+	width: 200px; 
+}

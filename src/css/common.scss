@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+//全局样式变量设置
+@import "basic/variables";
+//默认样式
+@import "basic/base";
+//整体结构样式
+@import "basic/layout";
+//业务组件
+@import "basic/component";
+//图标
+@import "basic/icon";
+//按钮
+@import "basic/btn";
+//表格&表单
+// @import "basic/table";
+//常用类名
+@import "basic/general";
+//修改插件样式
+@import "basic/resetPlug";
+
+@import "login";
+

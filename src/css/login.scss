@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+#login.login{
+    height: 100%;
+    background: #202341 url(../images/login_bg.jpg) center center no-repeat;
+}
+
+.login-header{
+    position: static;
+    height: 80px;
+
+    .logo{
+        width: 159px;
+        height: 51px;
+        margin: 14px 0 0 13px;
+        background-position: 0 -70px;
+        color: #fff;
+    }
+}
+
+$login-txt-height: 38px;
+.login-wrap{
+    position: absolute;
+    top: 80px;
+    bottom: 40px;
+    width: 100%;
+
+    form{
+        position: absolute;
+        right: 120px;
+        top: 50%;
+        margin-top: -181px;
+        width: 300px;
+        height: 228px;
+        padding: 32px 55px;
+        background-color: #fff;
+    }
+
+    .text-wrap{
+        position: relative;
+        display: block;
+
+        .txt{
+            width: 100%;
+            text-indent: 30px;
+            height: 40px;
+            line-height: 40px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #f3f6fa;
+        }
+        i{
+            position: absolute;
+            left: 8px;
+            top: 11px;
+        }
+        .icon-user1{
+            width: 15px;
+            height: 16px;
+            background: url(../images/user.png) no-repeat;
+        }
+        .icon-pwd{
+            width: 15px;
+            height: 18px;
+            background: url(../images/lock.png) no-repeat;
+        }
+    }
+
+    .btn,
+    .text-wrap,
+    .align-right{
+        margin-top: 20px;
+    }
+
+    h3{
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .j-chb{
+        vertical-align: -3px;
+        *vertical-align: 0;
+    }
+}
+
+.login-inner{
+    // position: relative;
+    // width: 1260px;
+    // margin: 0 auto;
+    // height: 100%;
+    
+    // 兼容IE7放弃以上写法
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 100%;
+    // width: 1260px;
+    // margin-left: -630px;
+    margin-left: 50%;
+}
+
+
+
+.login-footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    line-height: 40px;
+    text-indent: 20px;
+    // color: #7e7f8b;
+    color: #fff;
+    background: rgba(16, 24, 30, 0.4);
+    filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#6610181E', endColorstr='#6610181E');
+}
+
+/*for IE9*/
+:root .login-footer{
+    filter: none;
+}

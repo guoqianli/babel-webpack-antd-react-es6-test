@@ -1,0 +1,165 @@
+@charset "utf-8";
+
+$font-base : #1e2227 !default;
+// $body-bg : #f3f5f7 !default;
+$body-bg : #fff !default;
+$link-color : #4fa0fb !default; 
+$link-color-hover : #3686e0 !default;
+
+
+$white : #fff;
+//灰线条
+$gray-line : #ddd;
+//最小宽度
+$min-width: 1280px;
+//loading图片路径
+$loading-url : "https://s.56qq.com/staticBase/dist/20160326/images/loading.gif";
+//按钮，输入框阴影颜色设置
+$shadow-blue : #d9ebff;
+
+
+//整体布局样式
+//
+$header-height: 60px !default;
+
+
+//二级导航栏
+$common-nav-color : #92929e !default;
+$common-nav-color-hover : $link-color;
+$common-nav-height: 60px !default;
+$common-nav-width: 92px !default;
+
+//三级导航栏
+$common-sub-li-bg : #f9fafb !default;
+$common-sub-li-hover : $white;
+$common-sub-li-height : 30px !default;
+$common-sub-li-width : 98px !default;
+
+$common-sub-a-hover : $link-color;
+$common-sub-a-height : 26px !default;
+
+//搜索栏
+$search-width : 100px !default;
+$search-height : 34px !default;
+$input-padding: 5px !default;
+
+
+
+//按钮
+$btn-bg: #4fa0fb !default;
+$btn-hover-bg: darken($btn-bg, 8%) !default;
+$btn-height: 36px !default;
+$btn-width : 100px !default;
+
+
+
+
+//为目标元素添加 clearfix
+$clear-list : ".page_header", ".comnon_nav" , ".search_bar" , ".comnon_sub_nav", ".search_box";
+@each $k in $clear-list {
+  #{$k}:after {
+      content:"";
+      display:table;
+      clear:both;
+      overflow:hidden;
+  }
+  #{$k} {
+    zoom:1; /* IE < 8 */
+  }
+}
+
+
+//chorme浏览器滚动条样式设计
+@mixin chormeScorll(){
+	::-webkit-scrollbar {  
+	    width: 8px;
+	    height: 8px;
+	}  
+	::-webkit-scrollbar-track {  
+	  background: rgba(255,255,255,0.8); 
+	}  
+	::-webkit-scrollbar-thumb {  
+	    border-radius: 10px;  
+	    background: rgba(0,0,0,0.2);   
+	}  
+	::-webkit-scrollbar-thumb:window-inactive {  
+	    background: rgba(0,0,0,0.1);   
+	}  
+	::-webkit-scrollbar-thumb:vertical:hover{  
+	    background-color: rgba(0,0,0,0.3);  
+	}  
+	::-webkit-scrollbar-thumb:vertical:active{  
+	    background-color: rgba(0,0,0,0.7);  
+	}
+}
+
+
+//css样式渐变 过渡 位移 比例 阴影 透明 灰度设置 
+@mixin linear($top, $bottom){
+    background-color: $top;
+    background: -webkit-linear-gradient(top, $top, $bottom);
+    background: -moz-linear-gradient(top, $top, $bottom);
+    background: -o-linear-gradient(top, $top, $bottom);
+    background: -ms-linear-gradient(top, $top, $bottom);
+}
+
+@mixin transition($transition...) {
+  -webkit-transition: $transition;
+       -o-transition: $transition;
+          transition: $transition;
+}
+
+@mixin transition-transform($transition...) {
+  -webkit-transition: -webkit-transform $transition;
+     -moz-transition: -moz-transform $transition;
+       -o-transition: -o-transform $transition;
+          transition: transform $transition;
+}
+
+@mixin translate($x, $y) {
+  -webkit-transform: translate($x, $y);
+      -ms-transform: translate($x, $y); // IE9 only
+       -o-transform: translate($x, $y);
+          transform: translate($x, $y);
+}
+
+@mixin scale($ratio...) {
+  -webkit-transform: scale($ratio);
+      -ms-transform: scale($ratio); // IE9 only
+       -o-transform: scale($ratio);
+          transform: scale($ratio);
+}
+
+@mixin rotate($degrees) {
+  -webkit-transform: rotate($degrees);
+      -ms-transform: rotate($degrees); // IE9 only
+       -o-transform: rotate($degrees);
+          transform: rotate($degrees);
+}
+
+@mixin box-shadow($shadow...) {
+    -webkit-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+
+@mixin opacity($num){
+  opacity: $num;
+  filter: alpha(opacity=($num * 100));
+}
+
+@mixin gray(){
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  
+  filter: grayscale(100%);
+  filter: gray;
+}
+//border-box
+@mixin border_box {
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -o-box-sizing:border-box;
+}

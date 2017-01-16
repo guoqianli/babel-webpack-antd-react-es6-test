@@ -1,0 +1,26 @@
+.nf {
+    background: url('../../../images/login_bg.jpg') no-repeat;
+    height: 100%;
+    .nf-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -195px;
+        margin-left: -260px;
+        width: 520px;
+        height: 290px;
+    }
+    .nf-404 {
+        background: url('../../../images/404.png') no-repeat;
+        height: 249px;
+        width: 271px;
+    }
+    .nf-plaxify {
+        background: url('../../../images/plaxify.png') no-repeat;
+        height: 305px;
+        width: 295px;
+        background-size: 229px;
+        position: absolute;
+        left: 290px;
+    }
+}

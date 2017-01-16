@@ -1,4 +1,4 @@
-import '../../../css/login.scss';
+import '../../css/login.scss';
 
 export default class Login {
     constructor() {

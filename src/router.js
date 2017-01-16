@@ -1,4 +1,4 @@
-import login from './main/Login';
+import login from './components/Login';
 
 class Router {
     constructor() {
@@ -15,7 +15,7 @@ class Router {
             case '':
             case '#login': return new login();
             default: require.ensure([], () => {
-                const NotFound = require('./main/NotFound').default;
+                const NotFound = require('./components/NotFound').default;
                 return new NotFound();
             });
         }

@@ -36,9 +36,6 @@ class Sider extends Component {
             >
                 <SubMenu key="sub1" title={<span><Icon type="mail" />One</span>}>
                     <Menu.Item key="block"><Link to="/one/block">Block</Link></Menu.Item>
-                    <Menu.Item key="10">Option 10</Menu.Item>
-                    <Menu.Item key="11">Option 11</Menu.Item>
-                    <Menu.Item key="12">Option 12</Menu.Item>
                 </SubMenu>
             </Menu>
         );

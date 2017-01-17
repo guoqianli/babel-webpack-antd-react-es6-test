@@ -11,6 +11,6 @@ export default class Login {
     }
 
     event() {
-        $('#loginBtn').click(() => location.hash = '#apiManage');
+        $('#loginBtn').click(() => location.hash = '#index');
     }
 }

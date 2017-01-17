@@ -15,6 +15,8 @@ module.exports = {
     module: {
         loaders: [
             { test: /\.js$/, loader: 'babel', exclude: /node_modules/ },
+            { test: /\.css$/, loader: ExtractTextPlugin.extract('style', 'raw') },
+            { test: /\.less$/, loader: ExtractTextPlugin.extract('style', 'css!less') },
             { test: /\.scss$/, loader: ExtractTextPlugin.extract('style', 'css!sass') },
             { test: /\.tpl$/, loader: 'ejs' },
             { test: /\.(jpg|png|gif)$/, loader: 'url?limit=8192&name=images/[name].[hash:8].[ext]' },
@@ -27,7 +29,10 @@ module.exports = {
         }
     },
     plugins: [
+        // new ExtractTextPlugin('index.css', { allChunks: true }),
+
         new webpack.ProvidePlugin({
+            React: 'react',
             $: 'jquery',
             jQuery: "jquery",
             "window.jQuery": "jquery",

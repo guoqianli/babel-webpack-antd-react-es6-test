@@ -1,18 +1,16 @@
 import React from 'react';
 import { Router, Route, IndexRoute } from 'react-router';
-
-import Login from './components/Login';
-import App from './components/common/App';
-import Blocks from './components/Block';
+import { components, containers } from './components';
 
 export default (
     <Router>
-        <Route path="login" component={Login} />
-        <Route path="/" component={App}>
-            <IndexRoute component={Blocks} />
+        <Route path="login" component={containers.Login} />
+        <Route path="/" component={components.App}>
+            <IndexRoute component={containers.Blocks} />
             <Route path="one">
-                <IndexRoute component={Blocks} />
-                <Route path="block" component={Blocks} />
+                <IndexRoute component={containers.Blocks} />
+                <Route path="block" component={containers.Blocks} />
+                <Route path="dnd" component={containers.Dnd} />
             </Route>
         </Route>
     </Router>

@@ -1,14 +1,16 @@
 // 使用react-router-loader将组件转为可按需加载的组件
-import App from 'react-router!./common/App/index';
+import App from 'react-router!./common/App';
 
-import Login from 'react-router!./Login/index';
-import NotFound from 'react-router!./NotFound/index';
-import Block from 'react-router!./Block/index';
+import Login from 'react-router!./Login';
+import NotFound from 'react-router!./NotFound';
+import Blocks from 'react-router!./Block';
+import Dnd from 'react-router!./Dnd';
 
 export const containers = {
     Login,
     NotFound,
-    Block
+    Blocks,
+    Dnd,
 };
 
 export const components = {

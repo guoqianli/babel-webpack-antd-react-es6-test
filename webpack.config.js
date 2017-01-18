@@ -23,7 +23,7 @@ module.exports = {
         ]
     },
     resolve: {
-        extensions: ['', '.js'],
+        extensions: ['', '.js', '.jsx'],
         alias: {
             utils: path.join(__dirname, './src/utils')
         }

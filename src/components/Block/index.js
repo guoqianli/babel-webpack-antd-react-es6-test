@@ -5,7 +5,7 @@ import styles from './styles';
 import './demo.less';
 
 const AppHeader = () => {
-	let { header } = styles;
+	const { header } = styles;
 	return (
 		<Block style={header.block} el="header">
 			<h1 style={header.h1}>
@@ -26,21 +26,21 @@ const AppHeader = () => {
 };
 
 const AppFooter = () => {
-	let { footer } = styles;
-  return (
-		<Block style={footer.block} el="footer" layout>
-			<Block style={footer.p} el="p" flex>
-				Github page built using React and Blocks :)
+	const { footer } = styles;
+	return (
+			<Block style={footer.block} el="footer" layout>
+				<Block style={footer.p} el="p" flex>
+					Github page built using React and Blocks :)
+				</Block>
+				<Block style={footer.p} el="p" flex>
+					MIT &copy; <a href="http://whoisandie.com">whoisandie</a>
+				</Block>
 			</Block>
-			<Block style={footer.p} el="p" flex>
-				MIT &copy; <a href="http://whoisandie.com">whoisandie</a>
-			</Block>
-		</Block>
-	);
-}
+		);
+};
 
 const AppLayout = () => {
-	let { wrap } = styles;
+	const { wrap } = styles;
 	return (
 		<div className="horizontal-and-vertical-layout">
 			<h4>Horizontal and Vertical Layout</h4>
@@ -73,7 +73,7 @@ const AppLayout = () => {
 }
 
 const AppFlexible = () => {
-	let { flexible } = styles;
+	const { flexible } = styles;
 	return (
 		<div className="flexible-children">
 			<h4>Flexible children</h4>
@@ -96,7 +96,7 @@ const AppFlexible = () => {
 };
 
 const AppAligned = () => {
-	let { aligned } = styles;
+	const { aligned } = styles;
 	return (
 		<div className="alignment">
 			<h4>Alignment: Cross-axis</h4>
@@ -156,7 +156,7 @@ const AppJustified = () => {
 };
 
 const AppCentered = () => {
-	let { centered } = styles;
+	const { centered } = styles;
   return (
 		<div className="centered">
 			<h4>Centered (Cross-axis & Main-axis)</h4>
@@ -170,7 +170,7 @@ const AppCentered = () => {
 };
 
 const AppSelfAligned = () => {
-	let { aligned } = styles;
+	const { aligned } = styles;
   return (
 		<div className="self-alignment">
 			<h4>Self Alignment</h4>
@@ -187,7 +187,7 @@ const AppSelfAligned = () => {
 };
 
 const AppNested = () => {
-	let { nested } = styles;
+	const { nested } = styles;
 	return (
 		<div className="nested">
 			<h4>Nested Blocks (example of a complex layout)</h4>

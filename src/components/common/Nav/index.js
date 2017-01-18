@@ -14,8 +14,8 @@ class Sider extends Component {
         const Path = pathArry[pathArry.length - 1];
 
         this.state = {
-            selected: Path        
-        }
+            selected: Path
+        };
     }
 
     handleClick(e) {
@@ -28,10 +28,11 @@ class Sider extends Component {
 
     render() {
         return (
-            <Menu onClick={this.handleClick.bind(this)}
+            <Menu
+                onClick={this.handleClick.bind(this)}
                 style={{ width: 240 }}
-                defaultOpenKeys={['sub1']}
-                selectedKeys={[this.state.selected]}
+                openKeys={['sub1']}
+                selectedKeys={[this.state.selected || 'block']}
                 mode="inline"
             >
                 <SubMenu key="sub1" title={<span><Icon type="mail" />One</span>}>
@@ -40,6 +41,6 @@ class Sider extends Component {
             </Menu>
         );
     }
-};
+}
 
 export default Sider;

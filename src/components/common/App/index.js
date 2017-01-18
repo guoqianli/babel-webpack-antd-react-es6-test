@@ -1,15 +1,16 @@
-import React, { Component } from 'react';
-import { Layout, Menu, Breadcrumb, Icon } from 'antd';
-const { Header, Content, Footer, Sider } = Layout;
+import React from 'react';
+import { Layout } from 'antd';
 
 import Nav from '../Nav/index';
-import "./index.css";
+import './index.css';
+
+const { Header, Content, Sider } = Layout;
 
 function App({ children }) {
     return (
         <Layout className="layout">
             <Sider>
-                <Nav />    
+                <Nav />
             </Sider>
             <Layout>
                 <Header className="header" style={{ background: '#fff', padding: 0 }}>
@@ -20,7 +21,7 @@ function App({ children }) {
                 <Content className="content" style={{ margin: '24px 16px', padding: 24, background: '#fff', minHeight: 280 }}>
                     { children }
                 </Content>
-            </Layout>            
+            </Layout>
         </Layout>
     );
 }

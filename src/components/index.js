@@ -5,15 +5,17 @@ import Login from 'react-router!./Login';
 import NotFound from 'react-router!./NotFound';
 import Blocks from 'react-router!./Block';
 import Dnd from 'react-router!./Dnd';
+import Color from 'react-router!./Color';
 
 export const containers = {
-    Login,
-    NotFound,
-    Blocks,
-    Dnd,
+  Login,
+  NotFound,
+  Blocks,
+  Dnd,
+  Color,
 };
 
 export const components = {
-    App
+  App
 };
 

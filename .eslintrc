@@ -2,7 +2,7 @@
   "parser": "babel-eslint",
   "extends": "eslint-config-airbnb",
   "rules": {
-    "indent": [1, 4, { "SwitchCase": 1 }], // 缩进使用4个空格
+    "indent": [1, 2, { "SwitchCase": 1 }], // 缩进使用4个空格
     "no-unused-expressions": [1, { "allowShortCircuit": true, "allowTernary": true }],
 
     "max-len": [0, 100], // 一行最多100个字符
@@ -17,8 +17,8 @@
     "react/prop-types": 0,
     "no-param-reassign": 0,
 
-    "react/jsx-indent": [1, 4], // 缩进使用4个空格
-    "react/jsx-indent-props": [1, 4],
+    "react/jsx-indent": [1, 2], // 缩进使用4个空格
+    "react/jsx-indent-props": [1, 2],
     "react/jsx-no-bind": 0, // 关闭jsx中不能使用bind的限制
     "react/prefer-stateless-function": 0, // 关闭纯组件的限制
 

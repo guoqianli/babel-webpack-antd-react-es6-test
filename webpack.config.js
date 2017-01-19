@@ -9,7 +9,7 @@ module.exports = {
      output: {
         path: '/',
         filename: 'bundle.js',
-        chunkFilename: '[name].[hash:8].js',
+        // chunkFilename: '[name].[hash:8].js',
         publicPath: '/build/'
     },
     module: {
@@ -41,11 +41,13 @@ module.exports = {
         //     name: ['jquery'], // 将公共模块提取
         //     minChunks: Infinity // 提取所有entry共同依赖的模块
         // }),
-        new webpack.optimize.UglifyJsPlugin({
-            compress: {
-                warnings: false
-            }
-        }),
+
+        // 压缩打包代码
+        // new webpack.optimize.UglifyJsPlugin({
+        //     compress: {
+        //         warnings: false
+        //     }
+        // }),
         new ExtractTextPlugin('main.css', { allChunks: true }),
     ]
 }

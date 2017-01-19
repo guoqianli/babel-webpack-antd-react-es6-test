@@ -4,7 +4,7 @@
 
 .layout .header span {
     margin-left: 20px;
-    color: #108ee9;
+    color: rgba(0,0,0,0.65);
     font-size: 16px;
     font-family: 'Raleway', 'Hiragino Sans GB', sans-serif;
 }

@@ -29,6 +29,7 @@ class Sider extends Component {
         openKeys={['sub1']}
         selectedKeys={[this.state.current]}
         mode="inline"
+        theme="dark"
         >
         <SubMenu key="sub1" title={<span><Icon type="mail" />One</span>}>
           <Menu.Item key="block"><Link to="/one/block">Block</Link></Menu.Item>

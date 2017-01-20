@@ -29,7 +29,6 @@ class Color extends Component {
   }
 
   render() {
-    console.log(this.props.bgColor)
     const styles = reactCSS({
       'default': {
         color: {

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Layout } from 'antd';
 
 import Nav from '../Nav/index';
-import Color from '../../Color';
+import Color from '../../pluginUnit/Color';
 import './index.css';
 
 const { Header, Content, Sider } = Layout;

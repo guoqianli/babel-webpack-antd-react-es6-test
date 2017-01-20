@@ -3,9 +3,11 @@ import App from 'react-router!./common/App';
 
 import Login from 'react-router!./Login';
 import NotFound from 'react-router!./NotFound';
-import Blocks from 'react-router!./Block';
-import Dnd from 'react-router!./Dnd';
-import Color from 'react-router!./Color';
+import Blocks from 'react-router!./PluginUnit/Block';
+import Dnd from 'react-router!./PluginUnit/Dnd';
+import Color from 'react-router!./PluginUnit/Color';
+import FindeDomNode from 'react-router!./DomOpera/FindDomNode';
+import Refs from 'react-router!./DomOpera/Refs';
 
 export const containers = {
   Login,
@@ -13,6 +15,8 @@ export const containers = {
   Blocks,
   Dnd,
   Color,
+  FindeDomNode,
+  Refs,
 };
 
 export const components = {

@@ -8,6 +8,7 @@ import Dnd from 'react-router!./PluginUnit/Dnd';
 import Color from 'react-router!./PluginUnit/Color';
 import FindeDomNode from 'react-router!./DomOpera/FindDomNode';
 import Refs from 'react-router!./DomOpera/Refs';
+import CloneElement from 'react-router!./DomOpera/CloneElement';
 
 export const containers = {
   Login,
@@ -17,6 +18,7 @@ export const containers = {
   Color,
   FindeDomNode,
   Refs,
+  CloneElement,
 };
 
 export const components = {

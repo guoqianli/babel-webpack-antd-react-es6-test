@@ -65,6 +65,7 @@ class Sider extends Component {
         <SubMenu key="domOpera" title={<span><Icon type="setting" />DomOpera</span>}>
           <Menu.Item key="findDomNode"><Link to="/domOpera/findDomNode">FindDomNode</Link></Menu.Item>
           <Menu.Item key="refs"><Link to="/domOpera/refs">Refs</Link></Menu.Item>
+          <Menu.Item key="cloneElement"><Link to="/domOpera/cloneElement">cloneElement</Link></Menu.Item>
         </SubMenu>
       </Menu>
     );

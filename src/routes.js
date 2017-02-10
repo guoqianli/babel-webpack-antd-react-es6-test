@@ -12,6 +12,7 @@ export default (
         <Route path="block" component={containers.Blocks} />
         <Route path="dnd" component={containers.Dnd} />
         <Route path="color" component={containers.Color} />
+        <Route path="tabs" component={containers.Tabs} />
       </Route>
       <Route path="domOpera">
         <Route path="findDomNode" component={containers.FindeDomNode} />

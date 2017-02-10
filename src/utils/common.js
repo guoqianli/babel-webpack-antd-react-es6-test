@@ -15,8 +15,8 @@ export const ajaxJq = (uri, opts = {}) => {
     success: res => {
       opts.success.call(this, res);
     }
-  })
-}
+  });
+};
 
 // 用Promise封装$.ajax
 export const ajaxPromise = (uri, opts = {}) => {
@@ -30,6 +30,6 @@ export const ajaxPromise = (uri, opts = {}) => {
       success: res => {
         resolve(res);
       }
-    })
-  })
-}
+    });
+  });
+};

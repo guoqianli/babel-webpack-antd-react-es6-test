@@ -61,6 +61,7 @@ class Sider extends Component {
           <Menu.Item key="block"><Link to="/pluginUnit/block">Block</Link></Menu.Item>
           <Menu.Item key="dnd"><Link to="/pluginUnit/dnd">Dnd</Link></Menu.Item>
           <Menu.Item key="color"><Link to="/pluginUnit/color">Color</Link></Menu.Item>
+          <Menu.Item key="tabs"><Link to="/pluginUnit/tabs">Tabs</Link></Menu.Item>
         </SubMenu>
         <SubMenu key="domOpera" title={<span><Icon type="setting" />DomOpera</span>}>
           <Menu.Item key="findDomNode"><Link to="/domOpera/findDomNode">FindDomNode</Link></Menu.Item>

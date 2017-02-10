@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import classnames from 'classnames/bind';
+import classnames from 'classnames';
 
 class TabContent extends Component {
   static propTypes = {
@@ -21,7 +21,7 @@ class TabContent extends Component {
       return React.cloneElement(child, {
         classPrefix,
         isActive,
-        Children: child.props.Children,
+        children: child.props.children,
         key: `tabpane-${order}`,
       });
     });

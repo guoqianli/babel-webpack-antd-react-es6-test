@@ -4,34 +4,27 @@ import { Input } from 'antd';
 class Refs extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      userInput: ''
-    };
+
+    this.handleClick = this.handleClick.bind(this);
   }
 
-  handleChange(e) {
-    this.setState({ userInput: e.target.value });
-  }
-
-  clearAndFocusInput() {
-    this.setState({ userInput: '' }, () => {
-      this.refs.theInput.focus();
-    });
+  handleClick() {
+    if (this.myTextInput !== null) {
+      this.myTextInput.focus();
+    }
   }
 
   render() {
     return (
       <div>
-        <div onClick={this.clearAndFocusInput.bind(this)}>
-          Click to Focus and Reset
-        </div>
-        <Input
-          ref="theInput"
-          value={this.state.userInput}
-          onChange={this.handleChange.bind(this)}
+        <input type="text" ref={(ref) => this.myTextInput = ref} />
+        <input
+          type="button"
+          value="Focus the text input"
+          onClick={this.handleClick}
         />
       </div>
-    );
+    )
   }
 }
 

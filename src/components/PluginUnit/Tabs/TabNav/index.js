@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import classnames from 'classnames/bind';
+import classnames from 'classnames';
 
 class TabNav extends Component {
   static propTypes = {

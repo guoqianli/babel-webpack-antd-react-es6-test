@@ -1,23 +1,25 @@
 import React, { Component } from 'react';
 import { Layout } from 'antd';
+import classnames from 'classnames';
 
 import Nav from '../Nav/index';
 import Color from '../../pluginUnit/Color';
-import './index.css';
+import styles from './index.scss';
 
 const { Header, Content, Sider } = Layout;
 
 class App extends Component {
   render() {
     const bgColor = 'rgba(0,0,0,0.75)';
+    const classes = classnames(`${styles.header}`, 'wBg');
 
     return (
-      <Layout className="layout">
+      <Layout className={styles.layout}>
         <Sider style={{ background: bgColor }}>
           <Nav />
         </Sider>
         <Layout>
-          <Header className="header" style={{ background: '#fff', paddingLeft: '10px' }}>
+          <Header className={classes} style={{ paddingLeft: '10px' }}>
             <Color
               bgColor
             />
@@ -25,7 +27,7 @@ class App extends Component {
               我的react组件测试项目
             </span>
           </Header>
-          <Content className="content" style={{ margin: '24px 16px', padding: 24, background: '#fff', minHeight: 280 }}>
+          <Content className={styles.content} style={{ margin: '24px 16px', padding: 24, background: '#fff', minHeight: 280 }}>
             {this.props.children}
           </Content>
         </Layout>

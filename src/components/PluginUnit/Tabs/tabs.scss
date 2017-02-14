@@ -1,5 +1,9 @@
 $class-prefix: "tabs";
 
+:global(.content) {
+  color: #888;
+}
+
 .#{$class-prefix} {
   &-bar {
     margin-bottom: 16px;

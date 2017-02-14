@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import ReactDOM from 'react-dom';
 import classnames from 'classnames';
-import style from './tabs.scss';
+import styles from './tabs.scss';
 import TabNav from './TabNav';
 import TabContent from './TabContent';
 import { width } from '../common/width';
@@ -36,7 +36,7 @@ class Tabs extends Component {
     this.handleTabClick = this.handleTabClick.bind(this);
 
     const currProps = this.props;
-console.log(currProps)
+    console.log('currProps:', currProps);
     let activeIndex;
     // 初始化activeIndex state
     if ('activeIndex' in currProps) {
@@ -62,6 +62,7 @@ console.log(currProps)
 
   componentWillReciveProps(nextProps) {
     // 如果 props 传入 activeIndex，则直接更新
+    console.log('nextProps:', nextProps)
     if ('activeIndex' in nextProps) {
       this.setState({
         activeIndex: nextProps.activeIndex,
@@ -70,6 +71,7 @@ console.log(currProps)
   }
 
   handleTabClick(activeIndex) {
+    console.log('activeIndex:', activeIndex)
     const prevIndex = this.state.activeIndex;
 
     // 如果当前 activeIndex 与传入的 activeIndex 不一致

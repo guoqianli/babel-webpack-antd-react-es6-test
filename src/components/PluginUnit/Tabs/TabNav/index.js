@@ -15,7 +15,7 @@ class TabNav extends Component {
       if (!child) { return false; }
 
       const order = parseInt(child.props.order, 10);
-
+console.log('order:', order);
       // 利用class控制显示和隐藏
       const classes = classnames({
         [`${classPrefix}-tab`]: true,

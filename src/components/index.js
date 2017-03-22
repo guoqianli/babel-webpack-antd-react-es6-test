@@ -10,6 +10,7 @@ import FindeDomNode from 'react-router!./DomOpera/FindDomNode';
 import Refs from 'react-router!./DomOpera/Refs';
 import CloneElement from 'react-router!./DomOpera/CloneElement';
 import Tabs from 'react-router!./PluginUnit/Tabs';
+import CartItem from 'react-router!./HighOrderCompoent/CartItem';
 
 export const containers = {
   Login,
@@ -21,6 +22,7 @@ export const containers = {
   Refs,
   CloneElement,
   Tabs,
+  CartItem,
 };
 
 export const components = {

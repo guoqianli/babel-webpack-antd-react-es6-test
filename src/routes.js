@@ -18,6 +18,7 @@ export default (
         <Route path="findDomNode" component={containers.FindeDomNode} />
         <Route path="refs" component={containers.Refs} />
         <Route path="cloneElement" component={containers.CloneElement} />
+        <Route path="highOrderCompoent" component={containers.CartItem} />
       </Route>
     </Route>
   </Router>

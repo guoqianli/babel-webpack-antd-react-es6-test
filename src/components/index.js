@@ -10,6 +10,8 @@ import FindeDomNode from 'react-router!./DomOpera/FindDomNode';
 import Refs from 'react-router!./DomOpera/Refs';
 import CloneElement from 'react-router!./DomOpera/CloneElement';
 import Tabs from 'react-router!./PluginUnit/Tabs';
+import Card from 'react-router!./Utils/Card';
+import City from 'react-router!./Utils/City';
 import CartItem from 'react-router!./HighOrderCompoent/CartItem';
 
 export const containers = {
@@ -23,6 +25,8 @@ export const containers = {
   CloneElement,
   Tabs,
   CartItem,
+  Card,
+  City,
 };
 
 export const components = {

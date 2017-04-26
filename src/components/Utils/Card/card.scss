@@ -1,0 +1,20 @@
+.card {
+  position: relative;
+}
+.title {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.content {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: 0;
+}
+
+.operate {
+  position: absolute;
+  right: 14px;
+  top: 4px;
+  z-index: 10;
+}

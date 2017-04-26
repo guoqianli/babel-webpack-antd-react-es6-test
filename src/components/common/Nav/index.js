@@ -69,6 +69,10 @@ class Sider extends Component {
           <Menu.Item key="cloneElement"><Link to="/domOpera/cloneElement">cloneElement</Link></Menu.Item>
           <Menu.Item key="highOrderCompoent"><Link to="/domOpera/highOrderCompoent">highOrderCompoent</Link></Menu.Item>
         </SubMenu>
+        <SubMenu key="utils" title={<span><Icon type="mail" />Utils</span>}>
+          <Menu.Item key="card"><Link to="/utils/card">Card</Link></Menu.Item>
+          <Menu.Item key="city"><Link to="/utils/city">City</Link></Menu.Item>
+        </SubMenu>
       </Menu>
     );
   }
